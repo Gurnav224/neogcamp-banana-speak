@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --primary-color:#0284c7;
+    --secondary-color:#eff6ff;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+.header {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    text-align: center;
+    color: var(--secondary-color);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 61vh;
+}
+
+.container p {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+#inputTxt{
+    display: block;
+ max-width: 500px;
+ width: 90%;
+ height: 15vh;
+ margin-bottom: 1rem;
+ padding: 1rem;
+ font-size: 1.2rem;
+ font-family: 'Montserrat', sans-serif;
+
+}
+
+#btn-translate{
+    padding: 12px 15px;
+    font-size: large;
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--secondary-color);
+    border-radius: 5px;
+    box-shadow: 5px 2px  3px 2px #1782a8;
+}
+
+
+#output{
+    max-width: 500px;
+    width: 60%;
+    height: 10vh;
+    border: 2px solid;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+
+footer{
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    background-color: var(--primary-color);
+    padding: 0.7rem;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+footer h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+footer p{
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    
+}
