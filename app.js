@@ -11,6 +11,12 @@ function getTranslationURL(text){
         return serverURL + "?"+"text="+text;
 }
 
+
+function errorHandler(error){
+        console.log("error occured",error);
+        alert("server down try again after some time")
+}
+
 function clickHandler() {
 
         var inputValue = inputTxt.value;
@@ -20,7 +26,7 @@ function clickHandler() {
         .then(data => {
                 output.innerText = data.contents.translated;
 
-        })
+        }).catch(errorHandler)
         
         
 
